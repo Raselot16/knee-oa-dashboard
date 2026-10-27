@@ -1,0 +1,333 @@
+{
+  "schema_version": 2,
+  "source_sha256": "76dfab9a09784fd0fbfddd88677d3af41431c07a2a3be069123dab346c894d3c",
+  "model_sha256": "a393e89d23a358ac0c50cb21fb4976b168a8c7cff45f92861f0faef9449f291c",
+  "report_sha256": "f2869aa7dae27274aa4c9cf0c4931245e7de1dcea64f4f7f222bef649667a4c0",
+  "datasets": {
+    "labeled": {
+      "title": "Hồ sơ có nhãn · dữ liệu mô hình",
+      "n": 2392,
+      "label_counts": [
+        1197,
+        1195,
+        0
+      ],
+      "age_range": [
+        60.0,
+        79.0
+      ],
+      "bmi_range": [
+        17.2,
+        48.7
+      ],
+      "age_median": 68.0,
+      "bmi_median": 28.1,
+      "missing": {
+        "age": 0,
+        "sex_code_unverified": 0,
+        "bmi": 1,
+        "race_code": 1,
+        "smoking": 27,
+        "osteoporosis_baseline": 0,
+        "koa_followup": 0
+      },
+      "age_edges": [
+        60.0,
+        65.0,
+        70.0,
+        75.0,
+        80.0
+      ],
+      "age_hist": [
+        697,
+        661,
+        640,
+        394
+      ],
+      "bmi_edges": [
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        50.0
+      ],
+      "bmi_hist": [
+        33,
+        542,
+        1000,
+        604,
+        187,
+        24,
+        1
+      ],
+      "heatmap": [
+        [
+          14,
+          142,
+          256,
+          187,
+          80,
+          16,
+          1
+        ],
+        [
+          7,
+          132,
+          272,
+          196,
+          51,
+          3,
+          0
+        ],
+        [
+          10,
+          157,
+          288,
+          144,
+          36,
+          5,
+          0
+        ],
+        [
+          2,
+          111,
+          184,
+          77,
+          20,
+          0,
+          0
+        ]
+      ],
+      "paired_n": 2391,
+      "age_groups": [
+        {
+          "group": "60–64",
+          "labeled_n": 697,
+          "label_1_n": 322
+        },
+        {
+          "group": "65–69",
+          "labeled_n": 661,
+          "label_1_n": 346
+        },
+        {
+          "group": "70–74",
+          "labeled_n": 640,
+          "label_1_n": 319
+        },
+        {
+          "group": "75–79",
+          "labeled_n": 394,
+          "label_1_n": 208
+        }
+      ]
+    },
+    "all": {
+      "title": "Toàn bộ hồ sơ ban đầu",
+      "n": 2585,
+      "label_counts": [
+        1197,
+        1195,
+        193
+      ],
+      "age_range": [
+        60.0,
+        79.0
+      ],
+      "bmi_range": [
+        17.2,
+        48.7
+      ],
+      "age_median": 68.0,
+      "bmi_median": 28.1,
+      "missing": {
+        "age": 0,
+        "sex_code_unverified": 0,
+        "bmi": 1,
+        "race_code": 2,
+        "smoking": 28,
+        "osteoporosis_baseline": 0,
+        "koa_followup": 193
+      },
+      "age_edges": [
+        60.0,
+        65.0,
+        70.0,
+        75.0,
+        80.0
+      ],
+      "age_hist": [
+        763,
+        700,
+        686,
+        436
+      ],
+      "bmi_edges": [
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        50.0
+      ],
+      "bmi_hist": [
+        36,
+        583,
+        1084,
+        646,
+        207,
+        26,
+        2
+      ],
+      "heatmap": [
+        [
+          16,
+          159,
+          276,
+          205,
+          87,
+          17,
+          2
+        ],
+        [
+          7,
+          136,
+          291,
+          207,
+          56,
+          3,
+          0
+        ],
+        [
+          11,
+          166,
+          314,
+          150,
+          39,
+          6,
+          0
+        ],
+        [
+          2,
+          122,
+          203,
+          84,
+          25,
+          0,
+          0
+        ]
+      ],
+      "paired_n": 2584,
+      "age_groups": [
+        {
+          "group": "60–64",
+          "labeled_n": 697,
+          "label_1_n": 322
+        },
+        {
+          "group": "65–69",
+          "labeled_n": 661,
+          "label_1_n": 346
+        },
+        {
+          "group": "70–74",
+          "labeled_n": 640,
+          "label_1_n": 319
+        },
+        {
+          "group": "75–79",
+          "labeled_n": 394,
+          "label_1_n": 208
+        }
+      ]
+    }
+  },
+  "input_ranges": {
+    "age": [
+      60.0,
+      79.0
+    ],
+    "bmi": [
+      17.8,
+      44.8
+    ]
+  },
+  "ranges_from_training": true,
+  "score_reference": {
+    "n": 1913,
+    "tertiles": [
+      0.4374759025778453,
+      0.5567950791913089
+    ],
+    "hist": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      20,
+      49,
+      93,
+      132,
+      159,
+      190,
+      203,
+      224,
+      232,
+      178,
+      136,
+      121,
+      72,
+      52,
+      29,
+      11,
+      6,
+      1,
+      0,
+      0
+    ],
+    "edges": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.24,
+      0.28,
+      0.32,
+      0.36,
+      0.4,
+      0.44,
+      0.48,
+      0.52,
+      0.56,
+      0.6,
+      0.64,
+      0.68,
+      0.72,
+      0.76,
+      0.8,
+      0.84,
+      0.88,
+      0.92,
+      0.96,
+      1.0
+    ],
+    "source": "model predictions on saved training rows",
+    "clinical_thresholds": false
+  },
+  "created_date": "2026-10-27",
+  "sources": {
+    "Chăm sóc khớp · NIAMS": "https://www.niams.nih.gov/health-topics/osteoarthritis/diagnosis-treatment-and-steps-to-take",
+    "Đau gối và dấu hiệu cần khám sớm · NHS": "https://www.nhs.uk/symptoms/knee-pain/",
+    "Loãng xương · NIAMS": "https://www.niams.nih.gov/health-topics/osteoporosis/diagnosis-treatment-and-steps-to-take",
+    "Tài liệu dữ liệu MatchThem": "https://search.r-project.org/CRAN/refmans/MatchThem/html/osteoarthritis.html",
+    "Nghiên cứu OAI · NIAMS": "https://www.niams.nih.gov/grants-funding/funded-research/osteoarthritis-initiative"
+  }
+}

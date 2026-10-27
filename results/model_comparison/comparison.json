@@ -1,0 +1,169 @@
+{
+  "features": [
+    "age",
+    "bmi",
+    "smoking",
+    "osteoporosis_baseline"
+  ],
+  "target": "koa_followup",
+  "source_sha256": "76dfab9a09784fd0fbfddd88677d3af41431c07a2a3be069123dab346c894d3c",
+  "train_rows": 1913,
+  "test_rows": 479,
+  "selection_rule": "highest mean training-CV ROC-AUC; test scores do not select the model",
+  "selected_model_by_cv": "LogisticRegression",
+  "cv": {
+    "LogisticRegression": {
+      "accuracy": {
+        "mean": 0.5974970267794897,
+        "std": 0.014125843653143118,
+        "fold_scores": [
+          0.6057441253263708,
+          0.6031331592689295,
+          0.5718015665796344,
+          0.612565445026178,
+          0.5942408376963351
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.6439015629140282,
+        "std": 0.02740503455119377,
+        "fold_scores": [
+          0.6718340968586387,
+          0.6291584860383944,
+          0.5976221640488656,
+          0.6662920424330474,
+          0.6546010251911953
+        ]
+      },
+      "f1": {
+        "mean": 0.5957337461620806,
+        "std": 0.025373015507209207,
+        "fold_scores": [
+          0.5973333333333334,
+          0.6142131979695431,
+          0.5469613259668509,
+          0.616580310880829,
+          0.6035805626598465
+        ]
+      },
+      "recall": {
+        "mean": 0.5952006980802793,
+        "std": 0.041961462739823555,
+        "fold_scores": [
+          0.5833333333333334,
+          0.6335078534031413,
+          0.518324607329843,
+          0.6230366492146597,
+          0.6178010471204188
+        ]
+      }
+    },
+    "RandomForest": {
+      "accuracy": {
+        "mean": 0.5990759093953768,
+        "std": 0.025463769084686113,
+        "fold_scores": [
+          0.6240208877284595,
+          0.5848563968668408,
+          0.556135770234987,
+          0.6099476439790575,
+          0.6204188481675392
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.6364145462706614,
+        "std": 0.024068143278328746,
+        "fold_scores": [
+          0.6498554755671903,
+          0.6268815445026178,
+          0.59396815008726,
+          0.6493380115676652,
+          0.6620295496285737
+        ]
+      },
+      "f1": {
+        "mean": 0.6187969952737725,
+        "std": 0.03082956248831259,
+        "fold_scores": [
+          0.6129032258064516,
+          0.6310904872389791,
+          0.5618556701030928,
+          0.639225181598063,
+          0.648910411622276
+        ]
+      },
+      "recall": {
+        "mean": 0.6538285340314136,
+        "std": 0.05929626363075472,
+        "fold_scores": [
+          0.59375,
+          0.7120418848167539,
+          0.5706806282722513,
+          0.6910994764397905,
+          0.7015706806282722
+        ]
+      }
+    }
+  },
+  "test": {
+    "LogisticRegression": {
+      "metrics": {
+        "accuracy": 0.6200417536534447,
+        "precision_class_1": 0.6390243902439025,
+        "recall_class_1": 0.5481171548117155,
+        "f1_class_1": 0.5900900900900901,
+        "roc_auc": 0.640263249651325,
+        "average_precision": 0.6274395924288942
+      },
+      "confusion_matrix": [
+        [
+          166,
+          74
+        ],
+        [
+          108,
+          131
+        ]
+      ]
+    },
+    "RandomForest": {
+      "metrics": {
+        "accuracy": 0.592901878914405,
+        "precision_class_1": 0.5852713178294574,
+        "recall_class_1": 0.6317991631799164,
+        "f1_class_1": 0.607645875251509,
+        "roc_auc": 0.6294543235704323,
+        "average_precision": 0.6298337834929525
+      },
+      "confusion_matrix": [
+        [
+          133,
+          107
+        ],
+        [
+          88,
+          151
+        ]
+      ]
+    }
+  },
+  "decision_threshold": 0.5,
+  "matrix_order": [
+    0,
+    1
+  ],
+  "matrix_rows": "true",
+  "matrix_columns": "predicted",
+  "limitations": [
+    "Teaching baseline on a modified OAI-derived MatchThem dataset; not original OAI.",
+    "Follow-up horizon and exact clinical outcome criteria are not established.",
+    "Internal record_key is not a verified participant identifier; patient-independent split cannot be verified.",
+    "Repeated feature combinations may represent different individuals; row-split evaluation is exploratory.",
+    "Scores are not validated clinical risk probabilities."
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "streamlit": "1.66.1",
+    "plotly": "6.9.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "model": "LogisticRegression",
+  "source_sha256": "76dfab9a09784fd0fbfddd88677d3af41431c07a2a3be069123dab346c894d3c",
+  "contains_original_csv": false,
+  "notes": "Deployment demo packaged from the verified reproduced project model, not the Windows model binary. Requires Python 3.12 and the pinned dependencies. Not uploaded or deployed."
+}
